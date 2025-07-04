@@ -1,0 +1,95 @@
+*{
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    text-align: center;
+}
+
+h1 {
+    color: #4CAF50;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.choices {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+
+#user-choice, #computer-choice, #result-message {
+    margin: 10px 0;
+}
+
+@media (max-width: 600px) {
+    .choices {
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+        margin: 5px 0;
+    }
+}
+
+/* Additional styles for better aesthetics */
+body {
+    background-image: url('/images/background.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    background-color: #ffffff;
+    color: #333;
+}
+
+button:active {
+    background-color: #ddd;
+}
+
+/* Responsive adjustments */
+@media (max-width: 400px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .result {
+        font-size: 16px;
+    }
+}
