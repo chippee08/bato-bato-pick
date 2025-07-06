@@ -6,6 +6,8 @@ function play(playerChoice) {
   document.getElementById('computer-choice').textContent = `Computer chose: ${computerChoice}`;
 
   let result = '';
+  let playerScore = parseInt(document.getElementById('player-score').textContent.split(': ')[1]) || 0;
+  let computerScore = parseInt(document.getElementById('computer-score').textContent.split(': ')[1]) || 0;
 
   if (playerChoice === computerChoice) {
     result = "It's a draw!";
@@ -15,8 +17,12 @@ function play(playerChoice) {
     (playerChoice === 'scissors' && computerChoice === 'paper')
   ) {
     result = "You win!";
+    playerScore++;
+    document.getElementById('player-score').textContent = `Your Score: ${playerScore}`;
   } else {
     result = "You lose!";
+    computerScore++;
+    document.getElementById('computer-score').textContent = `Computer's Score: ${computerScore}`;
   }
 
   document.getElementById('winner').textContent = result;
