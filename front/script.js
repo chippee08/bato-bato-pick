@@ -2,8 +2,8 @@ function play(playerChoice) {
   const choices = ['rock', 'paper', 'scissors'];
   const computerChoice = choices[Math.floor(Math.random() * 3)];
 
-  document.getElementById('player-choice').textContent = `You chose: ${playerChoice}`;
-  document.getElementById('computer-choice').textContent = `Computer chose: ${computerChoice}`;
+  document.getElementById('player-choice').textContent = ` ${playerChoice}`;
+  document.getElementById('computer-choice').textContent = ` ${computerChoice}`;
 
   let result = '';
   let playerScore = parseInt(document.getElementById('player-score').textContent.split(': ')[1]) || 0;
@@ -25,5 +25,5 @@ function play(playerChoice) {
     document.getElementById('computer-score').textContent = `Computer's Score: ${computerScore}`;
   }
 
-  document.getElementById('winner').textContent = result;
+  document.getElementById('result-message').textContent = result;
 }

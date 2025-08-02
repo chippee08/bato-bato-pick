@@ -10,9 +10,28 @@ body {
   padding: 10px 20px;
   margin: 10px;
   cursor: pointer;
+  display: grid;
 }
 
-.result p, .result h2 {
+.score{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.result{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.message{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.result p, .result h2, .message p, .score p {
   font-size: 24px;
   margin: 10px 0;
 }

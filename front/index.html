@@ -9,22 +9,34 @@
 </head>
 <body>
     <h1>Bato, Bato, Pick!</h1>
+    <h1>✊🖐️✌️</h1>
     <div class="container">
+        
+        <div class="score">
+            <p id="player-score">Your Score: 0</p>
+            <p id="computer-score">Computer's Score: 0</p>
+        </div>
+
+        <div class="result">
+            <p>Your choice:</p>
+            <p id="player-choice"> </p>
+            <p>Computer's choice:</p>
+            <p id="computer-choice"> </p>
+        </div>
+
+        <div class="message">
+            <p id="result-message"></p>
+        </div>
+        
         <div class="choices">
             <button onclick="play('rock')">🪨 Rock</button>
             <button onclick="play('paper')">📄 Paper</button>
             <button onclick="play('scissors')">✂️ Scissors</button>
         </div>
 
-        <div class="result">
-            <p id="player-choice">Your choice: </p>
-            <p id="computer-choice">Computer's choice: </p>
-            <p id="result-message"></p>
+        <div class="plaer">
+             
         </div>
-
-        <div class="score">
-            <p id="player-score">Your Score: 0</p>
-            <p id="computer-score">Computer's Score: 0</p>
     
     <script src="script.js"></script>
 
