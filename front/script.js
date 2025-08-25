@@ -2,8 +2,8 @@ function play(playerChoice) {
   const choices = ['rock', 'paper', 'scissors'];
   const computerChoice = choices[Math.floor(Math.random() * 3)];
 
-  document.getElementById('player-choice').textContent = ` ${playerChoice}`;
-  document.getElementById('computer-choice').textContent = ` ${computerChoice}`;
+  document.getElementById('player-choice').textContent = `Your choice: ${playerChoice}`;
+  document.getElementById('computer-choice').textContent = `Computer's choice: ${computerChoice}`;
 
   let result = '';
   let playerScore = parseInt(document.getElementById('player-score').textContent.split(': ')[1]) || 0;
@@ -11,7 +11,8 @@ function play(playerChoice) {
 
   if (playerChoice === computerChoice) {
     result = "It's a draw!";
-  } else if (
+  } 
+  else if (
     (playerChoice === 'rock' && computerChoice === 'scissors') ||
     (playerChoice === 'paper' && computerChoice === 'rock') ||
     (playerChoice === 'scissors' && computerChoice === 'paper')
